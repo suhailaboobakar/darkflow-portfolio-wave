@@ -2,6 +2,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Download } from "lucide-react";
 
 const Navigation = () => {
   const location = useLocation();
@@ -14,6 +15,16 @@ const Navigation = () => {
     { path: "/skills", label: "Skills" },
     { path: "/contact", label: "Contact" },
   ];
+
+  const handleResumeDownload = () => {
+    // Create a temporary link to trigger download
+    const link = document.createElement('a');
+    link.href = '/resume.pdf'; // You'll need to add this file to the public folder
+    link.download = 'John_Doe_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <motion.nav
@@ -34,7 +45,7 @@ const Navigation = () => {
           </motion.div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <Link key={item.path} to={item.path} className="relative">
                 <motion.span
@@ -53,6 +64,20 @@ const Navigation = () => {
                 )}
               </Link>
             ))}
+            
+            {/* Resume Download Button */}
+            <motion.button
+              onClick={handleResumeDownload}
+              whileHover={{ 
+                scale: 1.05, 
+                boxShadow: "0 10px 30px rgba(59, 130, 246, 0.4)" 
+              }}
+              whileTap={{ scale: 0.95 }}
+              className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-semibold text-white shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
+            >
+              <Download size={16} />
+              Resume
+            </motion.button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -91,6 +116,19 @@ const Navigation = () => {
                 {item.label}
               </Link>
             ))}
+            
+            {/* Mobile Resume Download Button */}
+            <motion.button
+              onClick={() => {
+                handleResumeDownload();
+                setIsMobileMenuOpen(false);
+              }}
+              whileTap={{ scale: 0.95 }}
+              className="flex items-center gap-2 w-full text-left px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-semibold text-white shadow-lg"
+            >
+              <Download size={16} />
+              Download Resume
+            </motion.button>
           </div>
         </motion.div>
       </div>
