@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Float, Text3D } from "@react-three/drei";
