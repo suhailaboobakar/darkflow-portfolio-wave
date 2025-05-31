@@ -1,6 +1,6 @@
-
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +10,7 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const { toast } = useToast();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -22,14 +23,42 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    setFormData({ name: "", email: "", message: "" });
-    
-    setTimeout(() => setIsSubmitted(false), 3000);
+    try {
+      // Using Formspree as a form submission service
+      const response = await fetch('https://formspree.io/f/xanyeqkb', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          _replyto: formData.email,
+        }),
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+        setFormData({ name: "", email: "", message: "" });
+        toast({
+          title: "Message sent successfully!",
+          description: "Thank you for your message. I'll get back to you soon.",
+        });
+        setTimeout(() => setIsSubmitted(false), 3000);
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
+      toast({
+        title: "Failed to send message",
+        description: "Please try again or contact me directly via email.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const socialLinks = [
