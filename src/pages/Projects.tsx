@@ -118,8 +118,8 @@ const Projects = () => {
       description: "Interactive 3D portfolio website with Three.js animations, particle systems, and immersive user experience.",
       tech: ["React", "Three.js", "Framer Motion", "WebGL"],
       image: "🌐",
-      link: "#",
-      github: "#"
+      link: "https://darkflow-portfolio-wave.vercel.app/",
+      github: "https://github.com/suhailaboobakar/darkflow-portfolio-wave"
     },
     // {
     //   title: "Task Management App",
