@@ -98,21 +98,21 @@ const ProjectCard = ({
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with real-time inventory management, payment processing, and admin dashboard.",
-      tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      image: "🛒",
-      link: "#",
-      github: "#"
+      title: "ThinkBoard",
+      description: "A note taking web app with rate limiting per requests, updation, deletion.",
+      tech: ["React", "Node.js", "Mongodb", "Express" , "Upstash"],
+      image: "📋",
+      link: "https://mern-thinkboard-7e7b.onrender.com",
+      github: "https://github.com/suhailaboobakar/MERN-ThinkBoard"
     },
-    {
-      title: "AI Chat Application",
-      description: "Real-time chat application with AI-powered responses, file sharing, and group messaging capabilities.",
-      tech: ["Next.js", "WebSocket", "OpenAI", "MongoDB"],
-      image: "🤖",
-      link: "#",
-      github: "#"
-    },
+    // {
+    //   title: "AI Chat Application",
+    //   description: "Real-time chat application with AI-powered responses, file sharing, and group messaging capabilities.",
+    //   tech: ["Next.js", "WebSocket", "OpenAI", "MongoDB"],
+    //   image: "🤖",
+    //   link: "#",
+    //   github: "#"
+    // },
     {
       title: "3D Portfolio Website",
       description: "Interactive 3D portfolio website with Three.js animations, particle systems, and immersive user experience.",
@@ -121,30 +121,30 @@ const Projects = () => {
       link: "#",
       github: "#"
     },
-    {
-      title: "Task Management App",
-      description: "Collaborative task management platform with real-time updates, team workspaces, and advanced analytics.",
-      tech: ["Vue.js", "Firebase", "TypeScript", "Chart.js"],
-      image: "📋",
-      link: "#",
-      github: "#"
-    },
-    {
-      title: "Crypto Dashboard",
-      description: "Real-time cryptocurrency tracking dashboard with portfolio management and market analysis tools.",
-      tech: ["React", "D3.js", "WebSocket", "CoinGecko API"],
-      image: "₿",
-      link: "#",
-      github: "#"
-    },
-    {
-      title: "Social Media App",
-      description: "Full-featured social media platform with posts, stories, real-time messaging, and content moderation.",
-      tech: ["React Native", "GraphQL", "AWS", "Redis"],
-      image: "📱",
-      link: "#",
-      github: "#"
-    }
+    // {
+    //   title: "Task Management App",
+    //   description: "Collaborative task management platform with real-time updates, team workspaces, and advanced analytics.",
+    //   tech: ["Vue.js", "Firebase", "TypeScript", "Chart.js"],
+    //   image: "📋",
+    //   link: "#",
+    //   github: "#"
+    // },
+    // {
+    //   title: "Crypto Dashboard",
+    //   description: "Real-time cryptocurrency tracking dashboard with portfolio management and market analysis tools.",
+    //   tech: ["React", "D3.js", "WebSocket", "CoinGecko API"],
+    //   image: "₿",
+    //   link: "#",
+    //   github: "#"
+    // },
+    // {
+    //   title: "Social Media App",
+    //   description: "Full-featured social media platform with posts, stories, real-time messaging, and content moderation.",
+    //   tech: ["React Native", "GraphQL", "AWS", "Redis"],
+    //   image: "📱",
+    //   link: "#",
+    //   github: "#"
+    // }
   ];
 
   return (

@@ -20,7 +20,7 @@ const Navigation = () => {
     // Create a temporary link to trigger download
     const link = document.createElement('a');
     link.href = '/resume.pdf'; // You'll need to add this file to the public folder
-    link.download = 'John_Doe_Resume.pdf';
+    link.download = 'Suhail_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -40,7 +40,7 @@ const Navigation = () => {
             whileTap={{ scale: 0.95 }}
           >
             <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-              Portfolio
+              Suhail.
             </Link>
           </motion.div>
 

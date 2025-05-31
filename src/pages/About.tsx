@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 
 const About = () => {
@@ -54,7 +53,7 @@ const About = () => {
                   👨‍💻
                 </div>
               </motion.div>
-              
+
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
@@ -65,20 +64,27 @@ const About = () => {
 
           <motion.div variants={itemVariants} className="space-y-6">
             <h2 className="text-3xl font-bold text-white mb-6">
-              Hi, I'm John Doe
+              Hi, I'm Suhail
             </h2>
-            
+
             <p className="text-gray-300 text-lg leading-relaxed">
-              I'm a full-stack developer with over 5 years of experience creating
-              digital solutions that combine functionality with stunning visual design.
-              My passion lies in transforming complex problems into simple, elegant
-              solutions.
+              Hi, I’m a Computer Science engineering graduate with a strong
+              passion for building modern, scalable web applications. I
+              specialize in Full Stack Web Development and am continuously
+              sharpening my skills in technologies like React, Node.js, Express,
+              and PostgreSQL. Over time, I’ve built multiple projects that solve
+              real-world problems and showcase my ability to craft interactive,
+              responsive, and high-performance web experiences.
             </p>
 
             <p className="text-gray-300 text-lg leading-relaxed">
-              When I'm not coding, you can find me exploring new technologies,
-              contributing to open-source projects, or sharing my knowledge with
-              the developer community through blogs and tutorials.
+              What sets me apart is my hunger to learn and my commitment to
+              writing clean, maintainable code. I thrive in collaborative
+              environments, but I’m just as comfortable taking initiative and
+              working independently. Whether you're a recruiter looking for a
+              dedicated developer or a client in need of a solid web solution,
+              I’d love to bring value to your team or project. Let’s build
+              something amazing together!
             </p>
 
             <div className="grid grid-cols-2 gap-4 mt-8">
@@ -86,32 +92,38 @@ const About = () => {
                 whileHover={{ scale: 1.05 }}
                 className="p-4 bg-white/5 rounded-lg backdrop-blur-sm border border-white/10"
               >
-                <h3 className="text-xl font-semibold text-cyan-400 mb-2">5+</h3>
+                <h3 className="text-xl font-semibold text-cyan-400 mb-2">1+</h3>
                 <p className="text-gray-300">Years Experience</p>
               </motion.div>
-              
+
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="p-4 bg-white/5 rounded-lg backdrop-blur-sm border border-white/10"
               >
-                <h3 className="text-xl font-semibold text-purple-400 mb-2">50+</h3>
+                <h3 className="text-xl font-semibold text-purple-400 mb-2">
+                  5+
+                </h3>
                 <p className="text-gray-300">Projects Completed</p>
               </motion.div>
-              
+
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="p-4 bg-white/5 rounded-lg backdrop-blur-sm border border-white/10"
               >
-                <h3 className="text-xl font-semibold text-pink-400 mb-2">15+</h3>
+                <h3 className="text-xl font-semibold text-pink-400 mb-2">
+                  15+
+                </h3>
                 <p className="text-gray-300">Technologies</p>
               </motion.div>
-              
+
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="p-4 bg-white/5 rounded-lg backdrop-blur-sm border border-white/10"
               >
-                <h3 className="text-xl font-semibold text-green-400 mb-2">100%</h3>
-                <p className="text-gray-300">Client Satisfaction</p>
+                <h3 className="text-xl font-semibold text-green-400 mb-2">
+                  100%
+                </h3>
+                <p className="text-gray-300">Commitment</p>
               </motion.div>
             </div>
           </motion.div>

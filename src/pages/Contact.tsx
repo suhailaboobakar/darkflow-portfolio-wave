@@ -33,10 +33,10 @@ const Contact = () => {
   };
 
   const socialLinks = [
-    { name: "GitHub", icon: "🔗", url: "#", color: "hover:text-gray-400" },
-    { name: "LinkedIn", icon: "💼", url: "#", color: "hover:text-blue-400" },
-    { name: "Twitter", icon: "🐦", url: "#", color: "hover:text-cyan-400" },
-    { name: "Email", icon: "📧", url: "#", color: "hover:text-green-400" },
+    { name: "GitHub", icon: "🔗", url: "https://github.com/suhailaboobakar", color: "hover:text-gray-400" },
+    { name: "LinkedIn", icon: "💼", url: "https://www.linkedin.com/in/suhail-aboobakar-9a0162227/", color: "hover:text-blue-400" },
+    // { name: "Twitter", icon: "🐦", url: "#", color: "hover:text-cyan-400" },
+    { name: "Email", icon: "📧", url: "mailto:suhail17x@gmail.com", color: "hover:text-green-400" },
   ];
 
   return (
@@ -175,15 +175,15 @@ const Contact = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
                   <span className="text-2xl">📍</span>
-                  <span className="text-gray-300">San Francisco, CA</span>
+                  <span className="text-gray-300">Trivandrum, Kerala</span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <span className="text-2xl">📞</span>
-                  <span className="text-gray-300">+1 (555) 123-4567</span>
+                  <span className="text-gray-300">+91-8129016687</span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <span className="text-2xl">✉️</span>
-                  <span className="text-gray-300">john.doe@example.com</span>
+                  <span className="text-gray-300">suhail17x@gmail.com</span>
                 </div>
               </div>
             </div>

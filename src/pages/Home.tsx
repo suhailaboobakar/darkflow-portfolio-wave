@@ -51,7 +51,7 @@ const Home = () => {
               className="text-6xl md:text-8xl font-bold mb-6"
             >
               <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                John
+                Suhail
               </span>
               <br />
               <span className="text-white">Developer</span>

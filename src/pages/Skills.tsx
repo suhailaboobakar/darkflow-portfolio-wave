@@ -71,8 +71,8 @@ const Skills = () => {
     { name: "React/Next.js", level: 95 },
     { name: "TypeScript", level: 90 },
     { name: "Tailwind CSS", level: 92 },
-    { name: "Three.js", level: 85 },
-    { name: "Framer Motion", level: 88 },
+    // { name: "Three.js", level: 85 },
+    // { name: "Framer Motion", level: 88 },
   ];
 
   const backendSkills = [
@@ -80,14 +80,14 @@ const Skills = () => {
     { name: "Python", level: 85 },
     { name: "PostgreSQL", level: 82 },
     { name: "MongoDB", level: 80 },
-    { name: "GraphQL", level: 78 },
+    { name: "Express.js", level: 78 },
   ];
 
   const toolsSkills = [
     { name: "Git/GitHub", level: 95 },
-    { name: "Docker", level: 82 },
-    { name: "AWS", level: 80 },
-    { name: "Figma", level: 88 },
+    { name: "Lovable", level: 82 },
+    { name: "Vercel", level: 80 },
+    { name: "Render", level: 88 },
     { name: "VS Code", level: 98 },
   ];
 
@@ -149,7 +149,7 @@ const Skills = () => {
             className="inline-block px-8 py-4 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-lg border border-blue-500/30 backdrop-blur-sm"
           >
             <span className="text-cyan-400 font-semibold">💡 Currently Learning: </span>
-            <span className="text-white">AI/ML, WebAssembly, Rust</span>
+            <span className="text-white">AI/ML, WebAssembly</span>
           </motion.div>
         </motion.div>
       </div>
